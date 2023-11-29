@@ -99,10 +99,152 @@ alert('A sua nota é de ' +soma)*/
 
 
 
-let a = prompt('Digite seu nome')
+/*let nome = prompt ("Digite seu nome")
+let salario = Number (prompt ("Digite seu salário"))
+let idade = Number (prompt ("Digite sua idade de empresa"))
+let total
+if ( idade <= 3 ) {
+    total = salario * 1.03
+}else if( idade >= 4 && salario <= 10){
+    total = salario * 1.125
+}
+else{
+    total = salario * 1.2
+}
+ 
+alert ("você funcionário " + nome + " com " + idade + 'anos de impresa '+ "seu novo salario é de " + total)*/
 
-let b = prompt('Digite seu salario')
 
-let c = prompt('Quantos anos você trabalha?')
 
-let d = prompt('')
+/*let largura = prompt('Digite a largura do terreno')
+
+let comprimento = prompt('Digite o comprimento do terreno')
+
+let total = Number(largura) * Number(comprimento)
+
+if ( total <100){
+    alert('Terreno Popular')
+}else if ( total >=100 && total <=500){
+    alert('Terreno Master')
+}else {
+    alert('Terreno Vip')
+}
+
+alert(" A sua area é" + total + "e o seu terreno é" + total)*/
+
+
+/*let atividade = prompt('Quantas horas de atividade fisica você fez neste mês?') 
+
+
+let cliente = 0.05
+
+
+
+let total
+
+if ( atividade <=10) {
+    total= atividade * 2
+}else if ( atividade >10 && atividade <=20) {
+    total = atividade * 5 
+}else ( atividade >20 ) {
+    total = atividade * 10
+}
+
+resultado = atividade + cliente
+
+alert(' você praticou ' + atividade + ' horas por mes de atividade fisicia e ganhou ' + resultado + ' reais')*/
+
+
+/*let atual = prompt('Qual o seu salario?')
+
+let genero = prompt('Qual o seu genero?')
+
+let anos = prompt('Quantos anos voce trabalha na empresa?')
+
+let salarionovo
+
+if ( genero == "feminino" ){
+    if( anos <15){
+        salarionovo = Number(atual) * 0.05
+    }
+    else if ( anos >=15 && anos <=20){
+        salarionovo = Number(atual) * 0.12
+    }
+    else  {
+        salarionovo = Number(atual) * 0.23
+    }
+}
+if ( genero == "masculino" ){  
+        if (anos <20){
+            salarionovo = Number(atual) * 0.03
+        }
+        else if ( anos >=20 && anos <=30){
+            salarionovo = Number(atual) * 0.13
+        }
+        else {
+            salarionovo = Number(atual) * 0.25
+        }
+}   
+
+alert('O seu novo salario é de ' + salarionovo)*/
+
+/*let peso = prompt('Qual o seu peso?')
+
+let altura = prompt('Qual sua altura?')
+
+
+let soma = Number(peso) / Number(altura) **2
+
+
+if (soma <18.5) {
+    alert('Abaixo do peso')
+}
+else if ( soma >=18.5 && soma <=25 ){
+    alert('Peso ideal')
+}
+else if ( soma >25 && soma <=30){
+    alert('Sobrepeso')
+}
+else if (soma >30 && soma <=40){
+    alert('Obesidade')
+}
+else {
+    alert('Obesidade Morbída ' + soma)
+}*/
+
+function mostrarTabuada() {
+    // cria referencia aos elementos da pagina
+    let inNumero = document.getElementById('inNumero');
+    let outTabuada = document.getElementById('outTabuada');
+
+    //converte conteudo do campo inNumero
+    let numero = Number(inNumero.value);
+
+    // valida o numero 
+    if (numero ==0 || isNaN(numero)) {
+        alert("Informe um numero valido");
+        inNumero.focus();
+        isNumero.value = "";
+    }
+
+    //cria uma variavel do tipo string, que irá concatenar a resposta
+    let resposta = "";
+
+    //cria um laço de repetição
+    for (let i = 1; i <=10; i++) {
+        //a variavel resposta vai acumulando os novos conteudos
+        resposta = resposta + numero + " X " + i + " = " + numero * i + "\n"
+    }
+
+    // o conteudo da tag pre é alterado para exibir a tabuada do num
+    outTabuada.textContent = resposta;
+}
+
+    //cria referencia ao botão e apos associa function ao evento click
+    let btMostrar = document.getElementById ('btMostrar');
+    btMostrar.addEventListener("click", mostrarTabuada)
+
+
+
+
+
