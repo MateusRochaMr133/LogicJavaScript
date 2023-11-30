@@ -212,7 +212,7 @@ else {
     alert('Obesidade Morbída ' + soma)
 }*/
 
-function mostrarTabuada() {
+/*function mostrarTabuada() {
     // cria referencia aos elementos da pagina
     let inNumero = document.getElementById('inNumero');
     let outTabuada = document.getElementById('outTabuada');
@@ -242,9 +242,97 @@ function mostrarTabuada() {
 
     //cria referencia ao botão e apos associa function ao evento click
     let btMostrar = document.getElementById ('btMostrar');
-    btMostrar.addEventListener("click", mostrarTabuada)
+    btMostrar.addEventListener("click", mostrarTabuada)*/
+
+/*function listaNumeros(){
+    //cria referencia aos elemtetos que a funciotion ira manipular 
+    let inNumero = document.getElementById('inNumero');
+    let outResposta = document.getElementById('outResposta');
+
+    let numero = Number(inNumero.value); //obtem o numero informado 
+    // verifica validade do numero 
+    if (numero == 0 || isNaN(numero)) {
+        alert("Informe um número válido...");
+        inNumero.focus();
+        inNumero = ""
+    }
+    // inicializa variavel resposta
+    let resposta = " Entre " + numero + " e 1: ";
+    // cria um for decrescente
+    for (let i = numero; i > 0; i = i -1) {
+        // resposta vai acumulando numero (e virgulas)
+        resposta = resposta + i  + ", ";
+    }
+    // altera o conteudo de outResposta
+    outResposta.textContent = resposta ;
+}
+    // referencia elemtno e apos associa function ao evento click
+    let btDecrescer = document.getElementById("btDecrescer");
+    btDecrescer.addEventListener("click" , listaNumeros)*/
 
 
+    /*function menosNumero(){
+        let inNumero = document.getElementById('inNumero');
+        let outResposta = document.getElementById('outResposta');
+
+        let numero = Number(inNumero.value);
+
+        if (numero == 0 || isNaN(numero)){
+            alert("Informe um numero valido");
+            inNumero.focus();
+            inNumero = ""
+        }
+        let resposta = " Menos 10 :";
+
+        for (let i = numero; i >= 0; i = i - 10) {
+            resposta = resposta + i + ",";
+        }
+        outResposta.textContent = resposta ;
+    }
+    let btDecrescer = document.getElementById("btDecrescer");
+    btDecrescer.addEventListener("click" , menosNumero);*/
+
+    let npessoas = 8;
+    let maiorpeso = 0;
+    let totalpesssoas;
+    let maiorcem ;
+    let peso ;
+    
+
+
+    for(let i = 1; i<=8 ; i++) {
+    let peso = Number(prompt("Digite o peso da " + i + "° pesssoa"))
+
+    /*if(peso > maiorpeso){
+        maiorpeso = peso
+    }
+    total = total + peso
+
+    if (peso > 100) {
+        maiorcem++
+    }*/
+
+    
+}
+
+    /*if (peso > maiorpeso){
+        maiorpeso = peso
+    }
+    total = total + peso
+    if ( peso >100){
+        maiorcem++
+    }*/
+
+    if ( peso > 100){
+        let total=maiorpeso++
+    }
+
+    let totals = peso / npessoas
+    
+    alert('O total cadastrado de pessoas é ' + npessoas + 'e ' + total + 'de pessoas pesam mais de 100kg, ' + totals )
+
+
+    
 
 
 
