@@ -292,28 +292,28 @@ else {
     let btDecrescer = document.getElementById("btDecrescer");
     btDecrescer.addEventListener("click" , menosNumero);*/
 
-    let npessoas = 8;
+    /*let npessoas = 8;
     let maiorpeso = 0;
     let totalpesssoas;
     let maiorcem ;
-    let peso ;
+    let peso ;*/
     
 
 
-    for(let i = 1; i<=8 ; i++) {
+    /*for(let i = 1; i<=8 ; i++) {
     let peso = Number(prompt("Digite o peso da " + i + "° pesssoa"))
 
-    /*if(peso > maiorpeso){
+    if(peso > maiorpeso){
         maiorpeso = peso
     }
     total = total + peso
 
     if (peso > 100) {
         maiorcem++
-    }*/
+    }
 
     
-}
+}*/
 
     /*if (peso > maiorpeso){
         maiorpeso = peso
@@ -323,13 +323,191 @@ else {
         maiorcem++
     }*/
 
-    if ( peso > 100){
+    /*if ( peso > 100){
         let total=maiorpeso++
     }
 
     let totals = peso / npessoas
     
-    alert('O total cadastrado de pessoas é ' + npessoas + 'e ' + total + 'de pessoas pesam mais de 100kg, ' + totals )
+    alert('O total cadastrado de pessoas é ' + npessoas + 'e ' + total + 'de pessoas pesam mais de 100kg, ' + totals )*/
+
+
+/*let total = 0;
+let totalf = 0;
+let soma;
+let filho;
+
+for (let i = 1 ; i<=3 ; i++) {
+     soma = Number(prompt("Digite o seu salario "))
+     filho = Number(prompt('Digite o numero de filhos:'))
+    total = total + soma
+    totalf= totalf + filho
+}
+
+let mediasalario = total / 3
+
+let mediafilho = totalf / 3
+
+alert('a media é ' + mediasalario + 'e a média de filhos é ' + mediafilho)*/
+
+
+
+/*let atual = prompt('Qual o seu salario?')
+
+let genero = prompt('Qual o seu genero?')
+
+let anos = prompt('Quantos anos voce trabalha na empresa?')
+
+let salarionovo*/
+
+/*if ( genero == "feminino" ){
+    if( anos <15){
+        salarionovo = Number(atual) * 0.05
+    }
+    else if ( anos >=15 && anos <=20){
+        salarionovo = Number(atual) * 0.12
+    }
+    else  {
+        salarionovo = Number(atual) * 0.23
+    }
+}
+if ( genero == "masculino" ){  
+        if (anos <20){
+            salarionovo = Number(atual) * 0.03
+        }
+        else if ( anos >=20 && anos <=30){
+            salarionovo = Number(atual) * 0.13
+        }
+        else {
+            salarionovo = Number(atual) * 0.25
+        }
+}*/
+
+/*let passeio = 0;
+let acidente = 0;
+let estado = 0;
+let i = 0;
+
+for ( let i = i; i<=10 ; i++){
+    let passeio = prompt('Seu carro é de passseio? S/N')
+    let acidente = prompt('Seu carro ja se envolveu em acidente? S/N');
+    let estado = prompt('Qual o seu estado? SP/RJ')
+        }
+    
+    if ( passeio = "S"){
+        let total = total + passeio
+    } 
+    else if ( passeio = "N"){
+        total = total *0 
+    }
+    if ( estado = "SP"){
+        
+    }
+
+
+
+alert('Voce possui ' + total + ' carros de passeio')*/
+
+/*let candidato1 = 0;
+let candidato2 = 0;
+let canidato3 =0;
+
+
+
+for ( i = i; i<=3 ; i++ ) {
+    let totalcandidatos = prompt('O candidato 1 recebeu ' + candidato1 + ' ')
+}
+if (totalcandidatos ==1){
+
+}*/
+
+/* let pessoas =8;
+
+let maiorpessoas=0;
+
+let media=0;
+
+let maiorpesocadastrado=0;
+
+let i=1;
+
+
+for ( i = i; i<=3 ; i++) {
+    let peso = Number(prompt('Digite o peso da ' + i + ' ° pessoa'));
+    let sexo = prompt('Digite o seu sexo:');
+    }
+    
+    let maiorpeso= peso++
+
+
+    if ( peso >=100) {
+        maiorpessoas = total + pessoas;
+    } 
+    else if ( peso >100) {
+        maiorpesocadastrado = maiorpeso + peso;
+    }
+    
+    media = peso / pessoas
+
+    alert('Foram cadastradas no sistema ' + pessosas + ' e, ' + maiorpessoas + 'pesam mais de 100kg e a média é ' + media + ' e o maior peso cadastro é, ' + maiorpesocadastrado  ) */
+
+
+    
+/*     alert ('Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a escolha da condiçao de pagamento. Utilize os codigos da tabela a seguir para ler qual a condiçao de pagamento escoliha e efetuar o calculo adequado. Codigo Condiçao de pagamento.  1 - Á vista em dinheir ou cheque, recebe 10% de desconto  2-À vista no cartão de crédito ' )
+    let compra = prompt(Number('Digite o preço do produto'))
+    let pagamento = prompt('Qual a sua forma de pagamento?')
+    
+    let dinheiro = 0;
+    let desconto = 10/100;
+    let desconto2 = 15/100;
+    let cartao = 0;
+    let vista;
+
+    if ( compra == dinheiro ) {
+        vista = compra * desconto
+        let avista = vista.toLocaleString('pt-BR', {style : 'currency' , currency: 'BRL'})
+        alert(`Voce recebeu 10% de desconto e sua compra deu ${avista}`)
+    }
+    if ( compra === dinheiro ) {
+        cartao = compra 
+    } */
+
+
+    let nota1 = Number(prompt('Digite uma nota'))
+    let nota2 = Number(prompt('Digite a segunda nota?'))
+    let nota3 = Number(prompt('Digite a terceira nota?'))
+
+    let media
+    let mediatotal
+
+    media = nota1 + nota2 + nota3 
+    mediatotal = media / 3
+
+
+    if ( mediatotal >= 9) {
+        alert('Nota A')
+    }
+    else if ( mediatotal >=7 && mediatotal <9){
+        alert('Nota B')
+    }
+    else if (mediatotal >=6 && mediatotal <7) {
+        alert('Nota C')
+    }
+    else if ( mediatotal >=4 && mediatotal <6) {
+        alert('Nota D')
+    }
+    else {
+        alert('Nota E')
+    }
+
+    alert(`A sua nota é ${mediatotal}`)
+    confirm('A sua nota está certa?')
+
+
+
+    
+
+    
 
 
     
