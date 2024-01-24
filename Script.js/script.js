@@ -271,65 +271,65 @@ else {
     btDecrescer.addEventListener("click" , listaNumeros)*/
 
 
-    /*function menosNumero(){
-        let inNumero = document.getElementById('inNumero');
-        let outResposta = document.getElementById('outResposta');
+/*function menosNumero(){
+    let inNumero = document.getElementById('inNumero');
+    let outResposta = document.getElementById('outResposta');
 
-        let numero = Number(inNumero.value);
+    let numero = Number(inNumero.value);
 
-        if (numero == 0 || isNaN(numero)){
-            alert("Informe um numero valido");
-            inNumero.focus();
-            inNumero = ""
-        }
-        let resposta = " Menos 10 :";
-
-        for (let i = numero; i >= 0; i = i - 10) {
-            resposta = resposta + i + ",";
-        }
-        outResposta.textContent = resposta ;
+    if (numero == 0 || isNaN(numero)){
+        alert("Informe um numero valido");
+        inNumero.focus();
+        inNumero = ""
     }
-    let btDecrescer = document.getElementById("btDecrescer");
-    btDecrescer.addEventListener("click" , menosNumero);*/
+    let resposta = " Menos 10 :";
 
-    /*let npessoas = 8;
-    let maiorpeso = 0;
-    let totalpesssoas;
-    let maiorcem ;
-    let peso ;*/
-    
-
-
-    /*for(let i = 1; i<=8 ; i++) {
-    let peso = Number(prompt("Digite o peso da " + i + "° pesssoa"))
-
-    if(peso > maiorpeso){
-        maiorpeso = peso
+    for (let i = numero; i >= 0; i = i - 10) {
+        resposta = resposta + i + ",";
     }
-    total = total + peso
+    outResposta.textContent = resposta ;
+}
+let btDecrescer = document.getElementById("btDecrescer");
+btDecrescer.addEventListener("click" , menosNumero);*/
 
-    if (peso > 100) {
-        maiorcem++
-    }
+/*let npessoas = 8;
+let maiorpeso = 0;
+let totalpesssoas;
+let maiorcem ;
+let peso ;*/
 
-    
+
+
+/*for(let i = 1; i<=8 ; i++) {
+let peso = Number(prompt("Digite o peso da " + i + "° pesssoa"))
+
+if(peso > maiorpeso){
+    maiorpeso = peso
+}
+total = total + peso
+
+if (peso > 100) {
+    maiorcem++
+}
+
+ 
 }*/
 
-    /*if (peso > maiorpeso){
-        maiorpeso = peso
-    }
-    total = total + peso
-    if ( peso >100){
-        maiorcem++
-    }*/
+/*if (peso > maiorpeso){
+    maiorpeso = peso
+}
+total = total + peso
+if ( peso >100){
+    maiorcem++
+}*/
 
-    /*if ( peso > 100){
-        let total=maiorpeso++
-    }
+/*if ( peso > 100){
+    let total=maiorpeso++
+}
 
-    let totals = peso / npessoas
-    
-    alert('O total cadastrado de pessoas é ' + npessoas + 'e ' + total + 'de pessoas pesam mais de 100kg, ' + totals )*/
+let totals = peso / npessoas
+ 
+alert('O total cadastrado de pessoas é ' + npessoas + 'e ' + total + 'de pessoas pesam mais de 100kg, ' + totals )*/
 
 
 /*let total = 0;
@@ -452,7 +452,7 @@ for ( i = i; i<=3 ; i++) {
     alert('Foram cadastradas no sistema ' + pessosas + ' e, ' + maiorpessoas + 'pesam mais de 100kg e a média é ' + media + ' e o maior peso cadastro é, ' + maiorpesocadastrado  ) */
 
 
-    
+
 /*     alert ('Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a escolha da condiçao de pagamento. Utilize os codigos da tabela a seguir para ler qual a condiçao de pagamento escoliha e efetuar o calculo adequado. Codigo Condiçao de pagamento.  1 - Á vista em dinheir ou cheque, recebe 10% de desconto  2-À vista no cartão de crédito ' )
     let compra = prompt(Number('Digite o preço do produto'))
     let pagamento = prompt('Qual a sua forma de pagamento?')
@@ -473,44 +473,152 @@ for ( i = i; i<=3 ; i++) {
     } */
 
 
-    let nota1 = Number(prompt('Digite uma nota'))
-    let nota2 = Number(prompt('Digite a segunda nota?'))
-    let nota3 = Number(prompt('Digite a terceira nota?'))
-
-    let media
-    let mediatotal
-
-    media = nota1 + nota2 + nota3 
-    mediatotal = media / 3
 
 
-    if ( mediatotal >= 9) {
-        alert('Nota A')
+/* 
+let a = document.getElementsByClassName('mag')
+a.addeventlistenner('click' , clicar)
+a.addeventlistenner('mouseenter' , entrar)
+a.addeventlistenner('mouseout' , sair)
+ 
+function clicar () {
+    a.innertext = 'clicou!'
+    a.style.background = 'red'
+}
+*/
+
+/* let nota1 = Number(prompt('Digite uma nota'))
+let nota2 = Number(prompt('Digite a segunda nota?'))
+let nota3 = Number(prompt('Digite a terceira nota?'))
+
+let media
+let mediatotal
+
+media = nota1 + nota2 + nota3 
+mediatotal = media / 3
+
+
+if ( mediatotal >= 9) {
+    alert('Nota A')
+}
+else if ( mediatotal >=7 && mediatotal <9){
+    alert('Nota B')
+}
+else if (mediatotal >=6 && mediatotal <7) {
+    alert('Nota C')
+}
+else if ( mediatotal >=4 && mediatotal <6) {
+    alert('Nota D')
+}
+else {
+    alert('Nota E')
+}
+
+alert(`A sua nota é ${mediatotal}`)
+confirm('A sua nota está certa?')
+
+ */
+
+
+
+
+
+
+
+/*    
+let cardapio = parseFloat(prompt('O cardarpio de uma casa de lanches é dado pela tabela abaixo: \n Codigo-100 Cachorro Quente Preço=R$1,70 \n Codigo 101 Bauru Simples Preço=R$2,30 \n Codigo 102 Bauru com Ovo Preço=R$2,60 \n Digite o coduto do produto que voce quer:'))
+let preco = 0;
+
+switch(cardapio) {
+    case 100 :
+        alert(`Voce seleciou o produto 1 (Cachorro Quente) que custa R$1,70`)
+        preco = parseFloat(1.70)
+        break;
+        
+        case 101 :
+            alert (`Voce seleciou o produto 2 (Bauru Simples) que custa R$2,30`)
+            preco = parseFloat(2.30)
+            break;
+            
+            case 102 :
+                alert (`Voce seleciou o produto 3 (Bauru com Ovo que custa R$2,60)`)
+                preco = parseFloat(2.60)
+                break;
+                
+                default:
+                    alert ('Voce digitou a opção errada carai,volte e digite a certa se não eu vo te quebrar')
+                }
+                
+                let quantidade = Number(prompt('Digite a quantidade desse produto que voce quer:'))
+                
+                let total = parseFloat(quantidade) * preco
+                
+                let a = total.toFixed(2).replace("." , ",")
+                
+                
+                alert(`Voce compro o produto ${cardapio} e comprou ${quantidade} quantidades \n e o total deu R$${a}`)
+                */
+
+
+/*   
+let tabuada = parseFloat(prompt("Digite um número"));
+let tamTabuada = parseFloat(prompt("Digite o tamanho da tabuada"));
+let indice = 1;
+ 
+while(indice <= tamTabuada){
+   document.write(tabuada + " x " + indice + " = " +(indice * tabuada) + "<br>");
+   indice++
+}
+document.write("Fim da tabuada"); */
+let jair = 0
+let carlos = 0;
+let neves = 0;
+let nulo = 0;
+let branco = 0;
+
+let candidatos = parseFloat(prompt('Faça um progama que simule a urna eletronica. \n A tela a ser apresentada deverá ser da seguinte forma: \n As opções são: \n  1- Candidato Jair Rodrigues  \n 2- Candidato Carlos Luz \n 3- Candidato Neves Rocha \n 4- Nulo \n 5- Branco \n Entre com o seu voto:'))
+
+
+
+while (candidatos != 6) {
+
+
+    switch (candidatos) {
+
+        case 1:
+            
+            jair = candidatos++
+            break;
+
+        case 2:
+            
+            carlos = candidatos++
+            break;
+
+        case 3:
+            
+            neves = candidatos++
+            break;
+
+        case 4:
+           
+            nulo = candidatos++
+            break;
+
+        case 5:
+            
+            candidatos = branco++
+            break;
+
+        default:
+            alert('Digite um numero correto para o seu voto representado no texto')
+
+            candidatos = parseFloat(prompt('Faça um progama que simule a urna eletronica. \n A tela a ser apresentada deverá ser da seguinte forma: \n As opções são: \n  1- Candidato Jair Rodrigues  \n 2- Candidato Carlos Luz \n 3- Candidato Neves Rocha \n 4- Nulo \n 5- Branco \n Entre com o seu voto:'))
     }
-    else if ( mediatotal >=7 && mediatotal <9){
-        alert('Nota B')
-    }
-    else if (mediatotal >=6 && mediatotal <7) {
-        alert('Nota C')
-    }
-    else if ( mediatotal >=4 && mediatotal <6) {
-        alert('Nota D')
-    }
-    else {
-        alert('Nota E')
-    }
+}
 
-    alert(`A sua nota é ${mediatotal}`)
-    confirm('A sua nota está certa?')
+alert(`O candidato Jair Rodrigues recebeu ${candidatos} \n O candidato Carlos Luiz recebeu ${candidatos} \n O candidato Neves Rocha recebeu ${candidatos} \n Nulos recebeu ${candidatos} \n Branco recebeu ${candidatos}`)
 
-
-
-    
-
-    
-
-
-    
 
 
 
